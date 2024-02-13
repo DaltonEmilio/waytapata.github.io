@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Medicina alternativa">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="Dalton Enriquez">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="img/favicon.ico">
+  <title>Waytapata</title>
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+  <script defer src="index.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="nav contenedor">
+      <a href="index.html" class="logo nav-link"><img style="width: 60px; height: 60px;" src="img/icono_waytapata.svg"
+          alt="waytapara, web de medicina alternativa"></a>
+      <button class="nav-toggle" aria-label="Abrir menú">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="nav-menu">
+        <li class="nav-menu-item">
+          <a href="index.html" class="nav-menu-link nav-link">Home</a>
+        </li>
+        <li class="nav-menu-item">
+          <a href="quinesomos.html" class="nav-menu-link nav-link">Quienes somos</a>
+        </li>
+        <li class="nav-menu-item">
+          <a href="floresbach.html" class="nav-menu-link nav-link">Flores de Bach</a>
+        </li>
+        <li class="nav-menu-item">
+          <a href="contacto.html" class="nav-menu-link wayta nav-link nav-menu-link_active">Contacto</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="contenedor">
+      <div class="contacto">
+        <form class="form" name="form" action="https://formsubmit.co/waytapata@protonmail.com" method="POST">
+          <h2 id="t-enviar">Contáctanos</h2>
+          <p>Datos requeridos *</p>
+          <p type="Nombre: *"><input id="nombre" name="nombre" required title="Ej: Edward" minlength="3" required
+              maxlength="40" placeholder="Nombre..."></p>
+          <p type="Apellidos: *"><input id="apellidos" name="apellidos" required minlength="3" maxlength="40"
+              title="Ej: Bach" placeholder="Apellidos..."></p>
+          <p type="Pais: *"><input id="pais" name="pais" required minlength="3" maxlength="40"
+              title="Ej: Introduce el nombre de un pais" placeholder="Pais..."></p>
+          <p type="Email: *"><input id="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+              title="Ejemplo: waytapata@protonmail.com" placeholder="Correo electronico..."></p>
+          <p type="Mensaje: *"><textarea name="mensaje" minlength="5" required maxlength="300"
+              placeholder="Max. 300 caracteres..."></textarea></p>
+          <input id="button" type="submit" name="submit" value="Enviar">
+
+          <input type="hidden" name="_next" value="https://twitter.com/wayta_pata">
+          <input type="hidden" name="_captcha" value="false">
+
+        </form>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="contenedor">
+      <div class="ff">
+        <div class="d-a">
+          <p><strong>Waytapata</strong>, web de medicina alternativa.</p>
+          <p>Copyright &copy; <strong>Waytapata.</strong></p>
+        </div>
+        <div class="l-w-t"><img src="img/icono_waytapata.svg" alt="waytapata, web de medicina alternativa"></div>
+        <div class="r-sociales">
+          <p>Síguenos en:
+          </p>
+          <div class="rrr">
+            <a class="footer-rs1" href="https://t.me/+pd5HQ8o39EBhNTRk"><img src="img/telegram.svg"
+                alt="telegram, red social watapata"></a>
+            <a class="footer-rs2" href="mailto:waytapata@protonmail.com"><img src="img/envelope.svg"
+                alt="email, red social waitapata"></a>
+            <a class="footer-rs3" href="https://twitter.com/wayta_pata"><img src="img/twitter.svg"
+                alt="email, red social waytapata"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
